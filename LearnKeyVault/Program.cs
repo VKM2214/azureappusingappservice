@@ -21,7 +21,7 @@ namespace LearnKeyVault
             Host.CreateDefaultBuilder(args)
 .ConfigureAppConfiguration((context, config) =>
 {
-var keyVaultEndpoint = new Uri("https://readsecretvault.vault.azure.net/");
+var keyVaultEndpoint = new Uri("https://kvdotnetapp01.vault.azure.net/");
 config.AddAzureKeyVault(
 keyVaultEndpoint,
 new DefaultAzureCredential());
